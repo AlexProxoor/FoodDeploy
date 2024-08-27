@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   background-color: #27355a;
   padding: 20px;
   text-align: left;
-  position: relative;
+  position: relative; /* Для позиционирования бургер-меню */
 `;
 
 export const Title = styled.h1`
@@ -16,12 +16,10 @@ export const Title = styled.h1`
   font-weight: 400;
   font-family: "Arial", sans-serif;
   margin-left: 100px;
-
   @media (max-width: 769px) {
     margin-left: 60px;
     font-size: 12px;
   }
-
   @media (max-width: 360px) {
     margin-left: 10px;
     font-size: 12px;
@@ -37,17 +35,17 @@ export const BackButton = styled.button`
   cursor: pointer;
   font-size: 14px;
   position: relative;
-  margin-right: 50px;
+  margin-right: 50px; /* Подвинуть кнопку влево, чтобы увеличить отступ от заголовка */
 
   @media (max-width: 360px) {
-    display: none;
+    display: none; /* Скрываем кнопку на маленьких экранах */
   }
 `;
 
 export const BurgerIcon = styled.div`
   width: 30px;
   height: 30px;
-  display: none;
+  display: none; /* Изначально скрыт */
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -59,7 +57,7 @@ export const BurgerIcon = styled.div`
   }
 
   @media (max-width: 360px) {
-    display: flex;
+    display: flex; /* Показываем бургер-иконку на маленьких экранах */
   }
 `;
 
@@ -77,7 +75,6 @@ export const MenuItem = styled.div`
   color: white;
   padding: 10px 15px;
   cursor: pointer;
-
   &:hover {
     background-color: #1f2a45;
   }

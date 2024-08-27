@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const OuterContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Убедитесь, что этот параметр стоит на flex-start, чтобы выровнять элементы по верхнему краю */
+  align-items: flex-start;
   min-height: 100vh;
   padding: 20px;
 
@@ -27,7 +27,7 @@ export const InnerContainer = styled.div`
   gap: 20px;
   max-width: 1200px;
   width: 100%;
-  align-items: stretch; /* Изменено на stretch, чтобы растянуть элементы по высоте */
+  align-items: stretch;
 
   @media (max-width: 1200px) {
     gap: 15px;

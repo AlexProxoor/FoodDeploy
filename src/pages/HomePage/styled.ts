@@ -7,12 +7,12 @@ export const AppContainer = styled.div`
 `;
 
 export const MainContent = styled.main`
-  flex: 1; /* Занимает все доступное пространство */
-  padding: 20px; /* Отступы для контента */
+  flex: 1;
+  padding: 20px;
 `;
 
 export const FooterWrapper = styled.footer`
-  margin-top: auto; /* Прижимаем футер к низу */
+  margin-top: auto;
 `;
 
 export const TitleSearch = styled.div`
@@ -20,9 +20,8 @@ export const TitleSearch = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 18px;
-
   font-family: "Roboto", sans-serif;
-  font-weight: 100; /* Тонкий вес */
+  font-weight: 100;
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -34,6 +33,7 @@ export const TitleSearch = styled.div`
     display: none;
   }
 `;
+
 const rotate360 = keyframes`
   from {
     transform: rotate(0deg);

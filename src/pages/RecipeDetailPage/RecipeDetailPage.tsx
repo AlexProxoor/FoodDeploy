@@ -73,7 +73,7 @@ const RecipeDetailPage: React.FC = () => {
   }
 
   if (error) {
-    return <NotFound />; // Отображаем NotFound при ошибке
+    return <NotFound />;
   }
 
   return (

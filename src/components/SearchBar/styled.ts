@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 export const StyledFormContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10%; /* Отступы по бокам по умолчанию */
+  padding: 0 10%;
 
   @media (max-width: 1200px) {
     padding: 0 8%;
@@ -20,7 +20,7 @@ export const StyledFormContainer = styled.div`
   }
 
   @media (max-width: 390px) {
-    padding: 0 2%; /* Уменьшенные отступы на маленьких экранах */
+    padding: 0 2%;
   }
 `;
 
@@ -29,11 +29,11 @@ export const StyledForm = styled(Form)`
   align-items: center;
   width: 100%;
   position: relative;
-  gap: 10px; /* Отступ между полем ввода и иконкой поиска */
+  gap: 10px;
 
   @media (max-width: 390px) {
     flex-direction: column;
-    gap: 10px; /* Отступы между элементами в колонке */
+    gap: 10px;
   }
 `;
 
@@ -62,7 +62,7 @@ export const StyledField = styled(Field)`
   @media (max-width: 390px) {
     font-size: 14px;
     padding: 10px;
-    margin: 0; /* Убираем отступы */
+    margin: 0;
   }
 `;
 
@@ -77,7 +77,7 @@ export const SearchIcon = styled(FaSearch)`
 
   @media (max-width: 390px) {
     font-size: 16px;
-    right: 10px; /* Уменьшенный отступ справа на маленьких экранах */
+    right: 10px;
   }
 `;
 

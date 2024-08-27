@@ -3,77 +3,77 @@ import styled from "styled-components";
 export const Centered = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Выравнивание по левому краю */
-  padding-left: 10%; /* Такой же отступ, как и у карточек */
-  margin-top: 20px; /* Отступ сверху */
-  margin-bottom: 20px; /* Отступ снизу */
+  justify-content: flex-start;
+  padding-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   &::before {
-    content: "|"; /* Вертикальная полоса */
-    margin-right: 10px; /* Отступ между полосой и текстом */
-    color: orange; /* Оранжевый цвет для полосы */
-    font-size: 24px; /* Размер полосы */
+    content: "|";
+    margin-right: 10px;
+    color: orange;
+    font-size: 24px;
   }
 
   h2 {
-    margin: 0; /* Убираем стандартные отступы у заголовка */
-    font-size: 24px; /* Размер текста для больших экранов */
-    color: black; /* Черный цвет текста */
+    margin: 0;
+    font-size: 24px;
+    color: black;
 
     @media (max-width: 1200px) {
-      font-size: 22px; /* Размер текста для средних экранов */
+      font-size: 22px;
     }
 
     @media (max-width: 768px) {
-      font-size: 20px; /* Размер текста для малых экранов */
+      font-size: 20px;
     }
 
     @media (max-width: 480px) {
-      font-size: 18px; /* Размер текста для очень малых экранов */
+      font-size: 18px;
     }
 
     @media (max-width: 390px) {
-      font-size: 16px; /* Размер текста для самых маленьких экранов */
+      font-size: 16px;
     }
   }
 
   &::before {
     @media (max-width: 1200px) {
-      font-size: 22px; /* Размер полосы для средних экранов */
+      font-size: 22px;
     }
 
     @media (max-width: 768px) {
-      font-size: 20px; /* Размер полосы для малых экранов */
+      font-size: 20px;
     }
 
     @media (max-width: 480px) {
-      font-size: 18px; /* Размер полосы для очень малых экранов */
+      font-size: 18px;
     }
 
     @media (max-width: 390px) {
-      font-size: 16px; /* Размер полосы для самых маленьких экранов */
+      font-size: 16px;
     }
   }
 `;
 
 export const RecipeListContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряду */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: center;
-  padding: 0 10%; /* Отступы по бокам */
-  box-sizing: border-box; /* Для учета паддингов в ширине */
+  padding: 0 10%;
+  box-sizing: border-box;
 
   @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряду */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряду */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: 1fr; /* 1 карточка в ряду */
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -94,13 +94,14 @@ export const RecipeCardContainer = styled.div`
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    margin-bottom: 10px; /* Добавляем отступ снизу */
+    margin-bottom: 10px;
   }
 
   h3 {
     margin: 0;
     font-size: 18px;
-    color: #2E266F;
+    color: #2e266f;
+  }
 
   a {
     text-decoration: none;

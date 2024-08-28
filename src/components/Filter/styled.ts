@@ -11,6 +11,7 @@ export const FilterContainer = styled.div`
   @media (max-width: 390px) {
     flex-direction: column;
     align-items: center;
+    padding: 0px;
   }
 `;
 
@@ -21,12 +22,15 @@ export const StyledSelect = styled.select`
   border: 2px solid orange;
   background-color: white;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Arial", sans-serif;
 
   @media (max-width: 390px) {
     width: 100%;
     margin-bottom: 5px;
+    &:first-child {
+      margin-top: 20px;
+    }
   }
 
   &:focus {

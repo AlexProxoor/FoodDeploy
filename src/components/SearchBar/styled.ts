@@ -51,6 +51,9 @@ export const StyledField = styled(Field)`
   &::placeholder {
     color: #ccc;
     font-size: 16px;
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
   }
 
   &:focus {

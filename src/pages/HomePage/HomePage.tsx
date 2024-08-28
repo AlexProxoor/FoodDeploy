@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { fetchRecipes } from "utils/api";
 import SearchBar from "components/SearchBar/SearchBar";
@@ -22,6 +22,10 @@ const HomePage: React.FC = () => {
   const [selectedDiet, setSelectedDiet] = useState<string>("");
   const [selectDishType, setSelectDishType] = useState<string>("");
   const [nextPageUrl, setNextPageUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    performSearch("pasta");
+  }, []);
 
   const performSearch = (
     searchQuery: string,
